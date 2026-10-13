@@ -1,0 +1,31 @@
+{
+    "job_class": "PipelineJob",
+    "job_name": "GetUser",
+    "note": "",
+    "parameters": {
+        "enabled": true,
+        "include_external_urls": true,
+        "job_type": "standard",
+        "max_failures": 0,
+        "max_in_flight": 800,
+        "pipeline_parameters": {
+            "Environment": "UAT",
+            "IDNumber": null,
+            "correlationId": "111111111111111",
+            "email": "Hlanganani.maseko@falcorp.co.za"
+        },
+        "pipeline_path": "UltraGetUser",
+        "snaplex_path": "teraco-snaplex-dev01",
+        "watchdog": {
+            "instances": 1,
+            "per": "PLEX"
+        }
+    },
+    "schedule": {
+        "always_on": true
+    },
+    "trigger": {
+        "always_on": true
+    },
+    "trigger_type": "ScheduleTrigger"
+}

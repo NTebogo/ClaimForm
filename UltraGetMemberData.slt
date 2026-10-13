@@ -1,0 +1,30 @@
+{
+    "job_class": "PipelineJob",
+    "job_name": "UltraGetMemberData",
+    "note": "",
+    "parameters": {
+        "enabled": true,
+        "include_external_urls": true,
+        "job_type": "standard",
+        "max_failures": 0,
+        "max_in_flight": 800,
+        "pipeline_parameters": {
+            "Email": "",
+            "Environment": "UAT",
+            "Phone": ""
+        },
+        "pipeline_path": "UltraGetMemberData_001",
+        "snaplex_path": "teraco-snaplex-dev01",
+        "watchdog": {
+            "instances": 1,
+            "per": "PLEX"
+        }
+    },
+    "schedule": {
+        "always_on": true
+    },
+    "trigger": {
+        "always_on": true
+    },
+    "trigger_type": "ScheduleTrigger"
+}

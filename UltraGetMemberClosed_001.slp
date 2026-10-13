@@ -1,0 +1,579 @@
+{
+    "ai_map": {
+        "footprint": "H4sIAAAAAAAAA8srzckBAE/8yyUEAAAA"
+    },
+    "class_id": "com-snaplogic-pipeline",
+    "class_version": 9,
+    "link_map": {
+        "link103": {
+            "dst_id": "11111111-1111-1111-1111-000000000001",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000000",
+            "src_view_id": "output0"
+        }
+    },
+    "property_map": {
+        "error": {
+            "error_behavior": {
+                "value": "none"
+            }
+        },
+        "info": {
+            "author": {
+                "value": "thabang.raphahlelo@falcorp.co.za"
+            },
+            "label": {},
+            "notes": {
+                "value": null
+            },
+            "pipeline_doc_uri": {
+                "value": null
+            },
+            "purpose": {
+                "value": null
+            }
+        },
+        "input": {
+            "11111111-1111-1111-1111-000000000000_input0": {
+                "label": {
+                    "value": "Map Request Content - input0"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            }
+        },
+        "output": {
+            "11111111-1111-1111-1111-000000000001_output0": {
+                "label": {
+                    "value": "Get Members - output0"
+                },
+                "view_type": {
+                    "value": "binary"
+                }
+            }
+        },
+        "settings": {
+            "error_param_table": {
+                "value": []
+            },
+            "error_pipeline": {
+                "expression": false,
+                "value": null
+            },
+            "imports": {
+                "value": [
+                    {
+                        "as": {
+                            "value": "WE_config"
+                        },
+                        "path": {
+                            "expression": false,
+                            "value": "shared/WE_config.json"
+                        }
+                    },
+                    {
+                        "as": {
+                            "value": "config"
+                        },
+                        "path": {
+                            "expression": false,
+                            "value": "shared/config.json"
+                        }
+                    }
+                ]
+            },
+            "param_table": {
+                "value": [
+                    {
+                        "capture": {
+                            "value": false
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "Environment"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "DEV"
+                        }
+                    }
+                ]
+            },
+            "tags": {
+                "value": []
+            }
+        }
+    },
+    "render_map": {
+        "default_snaplex": null,
+        "detail_map": {
+            "11111111-1111-1111-1111-000000000000": {
+                "error": {},
+                "grid_x_int": 3,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000001": {
+                "error": {},
+                "grid_x_int": 4,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            }
+        },
+        "notes": {},
+        "pan_x_num": 0,
+        "pan_y_num": 0,
+        "scale_ratio": 1
+    },
+    "snap_map": {
+        "11111111-1111-1111-1111-000000000000": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000000",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Map Request Content"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "nullSafeAccess": {
+                        "value": true
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$content.oId"
+                                        },
+                                        "targetPath": {
+                                            "value": "UserId"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$content.profileId"
+                                        },
+                                        "targetPath": {
+                                            "value": "ProfileId"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$content.pageNumber"
+                                        },
+                                        "targetPath": {
+                                            "value": "PageNumber"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$content.rowsPerPage"
+                                        },
+                                        "targetPath": {
+                                            "value": "RowsPerPage"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$content.sortColumn"
+                                        },
+                                        "targetPath": {
+                                            "value": "SortColumn"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$content.sortDirection"
+                                        },
+                                        "targetPath": {
+                                            "value": "SortDirection"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$content.searchBy"
+                                        },
+                                        "targetPath": {
+                                            "value": "SearchBy"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$content.filter"
+                                        },
+                                        "targetPath": {
+                                            "value": "Filter"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$content.isHR"
+                                        },
+                                        "targetPath": {
+                                            "value": "isHR"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$content.filterType"
+                                        },
+                                        "targetPath": {
+                                            "value": "FilterType"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$content.clientId"
+                                        },
+                                        "targetPath": {
+                                            "value": "ClientId"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$content.personId"
+                                        },
+                                        "targetPath": {
+                                            "value": "PersonId"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000001": {
+            "class_id": "com-snaplogic-snaps-flow-pipeexec",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000001",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Get Members"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {
+                    "batchSize": {
+                        "expression": false,
+                        "value": 1
+                    },
+                    "execLabel": {
+                        "expression": true,
+                        "value": null
+                    },
+                    "executable_during_suggest": {
+                        "value": true
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "loopDocument": {
+                        "expression": true
+                    },
+                    "params": {
+                        "value": [
+                            {
+                                "paramName": {
+                                    "value": "OId"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "$UserId"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "ProfileId"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "$ProfileId"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "Account"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "\"../\"+lib.config[_Environment].DatabaseAccountPath"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "EncryptionKey"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "lib.config[_Environment].EncryptionKey"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "BizagiUrl"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "lib.config['projects'].BizagiUrl"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "BizagiToken"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "\"Basic \"+lib.config['projects'].BizagiBasicToken"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "ProcessId"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "lib.config[_Environment].BizagiCLAIMIdentity"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "PageNumber"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "$PageNumber"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "RowsPerPage"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "$RowsPerPage"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "SortColumn"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "$SortColumn"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "SortDirection"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "$SortDirection"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "SearchBy"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "$SearchBy"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "Filter"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "$Filter"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "IsHrAction"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "$isHR"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "FilterType"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "$FilterType"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "ClientId"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "$ClientId"
+                                }
+                            },
+                            {
+                                "paramName": {
+                                    "value": "PersonId"
+                                },
+                                "paramValue": {
+                                    "expression": true,
+                                    "value": "$PersonId"
+                                }
+                            }
+                        ]
+                    },
+                    "pipeline": {
+                        "expression": false,
+                        "value": "GetMembersClosed_001"
+                    },
+                    "poolSize": {
+                        "expression": false,
+                        "value": 1
+                    },
+                    "retryInterval": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "retryLimit": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "reuse": {
+                        "value": false
+                    },
+                    "snaplex": {
+                        "expression": false
+                    },
+                    "snaplexGovernor": {
+                        "value": "SNAPLEX_WITH_PATH"
+                    },
+                    "timeout": {
+                        "expression": false,
+                        "value": null
+                    }
+                },
+                "view_serial": 100
+            }
+        }
+    }
+}

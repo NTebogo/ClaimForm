@@ -1,0 +1,30 @@
+{
+    "job_class": "PipelineJob",
+    "job_name": "GetMemberData_002 Task",
+    "note": "",
+    "parameters": {
+        "enabled": true,
+        "include_external_urls": true,
+        "job_type": "standard",
+        "pipeline_parameters": {
+            "Account": "../../../shared/GTC_DEV",
+            "AlfrescoAcc": "../../shared/AlfrescoAuth",
+            "AlfrescoUrl": "https://gtcalfresco.gtc.co.za",
+            "ClientGuid": "00000000-0000-4000-0000-000000000231",
+            "ClientId": "GENERIC_DEMO",
+            "ClientSecret": "065908F5-2C4C-4E45-A4D0-B6369DC5F850",
+            "Email": null,
+            "EnvironmentId": "UAT",
+            "EverestBaseURL": "https://test2-api.gtc-eb.co.za",
+            "IDNumber": "8305300688087",
+            "Phone": null,
+            "SessionId": "264167",
+            "ValidEventName": "Ev_ReceiveSubmittedData"
+        },
+        "pipeline_path": "GetMemberData_002",
+        "snaplex_path": "teraco-snaplex-dev01"
+    },
+    "schedule": {},
+    "trigger": {},
+    "trigger_type": "ScheduleTrigger"
+}

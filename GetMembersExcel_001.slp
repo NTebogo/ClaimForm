@@ -1,0 +1,2601 @@
+{
+    "ai_map": {
+        "footprint": "H4sIAAAAAAAAA8srzckBAE/8yyUEAAAA"
+    },
+    "class_id": "com-snaplogic-pipeline",
+    "class_version": 9,
+    "link_map": {
+        "link362": {
+            "dst_id": "11111111-1111-1111-1111-000000000002",
+            "dst_view_id": "input101",
+            "src_id": "11111111-1111-1111-1111-000000000001",
+            "src_view_id": "output0"
+        },
+        "link363": {
+            "dst_id": "11111111-1111-1111-1111-000000000004",
+            "dst_view_id": "input104",
+            "src_id": "11111111-1111-1111-1111-000000000003",
+            "src_view_id": "output0"
+        },
+        "link365": {
+            "dst_id": "11111111-1111-1111-1111-000000000008",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000007",
+            "src_view_id": "output0"
+        },
+        "link366": {
+            "dst_id": "11111111-1111-1111-1111-000000000009",
+            "dst_view_id": "input101",
+            "src_id": "11111111-1111-1111-1111-000000000008",
+            "src_view_id": "output103"
+        },
+        "link367": {
+            "dst_id": "11111111-1111-1111-1111-000000000001",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000000",
+            "src_view_id": "outputRows"
+        },
+        "link368": {
+            "dst_id": "11111111-1111-1111-1111-000000000003",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000002",
+            "src_view_id": "outputRows"
+        },
+        "link369": {
+            "dst_id": "11111111-1111-1111-1111-000000000005",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000004",
+            "src_view_id": "output102"
+        },
+        "link370": {
+            "dst_id": "11111111-1111-1111-1111-000000000007",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000005",
+            "src_view_id": "output0"
+        }
+    },
+    "property_map": {
+        "error": {
+            "error_behavior": {
+                "value": "none"
+            }
+        },
+        "info": {
+            "author": {
+                "value": "tnkopane@gtc.co.za"
+            },
+            "label": {},
+            "notes": {
+                "value": null
+            },
+            "pipeline_doc_uri": {
+                "value": null
+            },
+            "purpose": {
+                "value": null
+            }
+        },
+        "input": {},
+        "output": {
+            "11111111-1111-1111-1111-000000000009_output0": {
+                "label": {
+                    "value": "File Reader - output0"
+                },
+                "view_type": {
+                    "value": "binary"
+                }
+            }
+        },
+        "settings": {
+            "error_param_table": {
+                "value": []
+            },
+            "error_pipeline": {
+                "expression": false,
+                "value": null
+            },
+            "imports": {
+                "value": []
+            },
+            "param_table": {
+                "value": [
+                    {
+                        "capture": {
+                            "value": true
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "BizagiUrl"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "https://dev-bpm-gtc.bizagi.com"
+                        }
+                    },
+                    {
+                        "capture": {
+                            "value": false
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "QueryId"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "97a583e2-858d-4bbd-bd7a-5cd534e2c8c0"
+                        }
+                    },
+                    {
+                        "capture": {
+                            "value": true
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "BizagiToken"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "Basic ODA0YmNlNmQwYjIwZWJjMDdiOTYwMjIxOWYxODZkMTkyODI3ODVhNDE5ZWNmY2ZlM2E5MDIxZDhiYTM5ZjM4Mzo3YTQwNjBkMGYzMGE1ZjRkZWJjNmM2M2U2NjQzMDI4ZThlZWJkNWI1N2JkNzAyNjFjMGVjMDdmY2ZmNDQ0NTA4"
+                        }
+                    },
+                    {
+                        "capture": {
+                            "value": false
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "ProcessId"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "254ae830-1cf9-4e29-ac3c-3254499d5beb"
+                        }
+                    },
+                    {
+                        "capture": {
+                            "value": false
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "Account"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "../../../shared/GTC_DEV"
+                        }
+                    },
+                    {
+                        "capture": {
+                            "value": false
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "EncryptionKey"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "10023d6b-8247-447a-92ff-d617c98044cc"
+                        }
+                    },
+                    {
+                        "capture": {
+                            "value": true
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "ClientId"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "561"
+                        }
+                    },
+                    {
+                        "capture": {
+                            "value": true
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "PersonId"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "373767"
+                        }
+                    }
+                ]
+            },
+            "tags": {
+                "value": []
+            }
+        }
+    },
+    "render_map": {
+        "default_snaplex": null,
+        "detail_map": {
+            "11111111-1111-1111-1111-000000000000": {
+                "error": {},
+                "grid_x_int": 2,
+                "grid_y_int": 5,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000001": {
+                "error": {},
+                "grid_x_int": 3,
+                "grid_y_int": 5,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000002": {
+                "error": {},
+                "grid_x_int": 4,
+                "grid_y_int": 5,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000003": {
+                "error": {},
+                "grid_x_int": 5,
+                "grid_y_int": 5,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000004": {
+                "error": {},
+                "grid_x_int": 6,
+                "grid_y_int": 5,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000005": {
+                "error": {},
+                "grid_x_int": 7,
+                "grid_y_int": 5,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000006": {
+                "error": {},
+                "grid_x_int": 8,
+                "grid_y_int": 5,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000007": {
+                "error": {},
+                "grid_x_int": 9,
+                "grid_y_int": 5,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000008": {
+                "error": {},
+                "grid_x_int": 10,
+                "grid_y_int": 5,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000009": {
+                "error": {},
+                "grid_x_int": 11,
+                "grid_y_int": 5,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            }
+        },
+        "notes": {},
+        "pan_x_num": 0,
+        "pan_y_num": 0,
+        "scale_ratio": 1
+    },
+    "snap_map": {
+        "11111111-1111-1111-1111-000000000000": {
+            "class_id": "com-snaplogic-snaps-sqlserver-select",
+            "class_version": 3,
+            "instance_id": "11111111-1111-1111-1111-000000000000",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": true,
+                        "value": "_Account"
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Select Cases"
+                    },
+                    "notes": {}
+                },
+                "input": {},
+                "output": {
+                    "outputRows": {
+                        "label": {
+                            "value": "rows"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "autoCommit": {
+                        "value": "False"
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "fetchOutputFieldsInSchema": {
+                        "value": false
+                    },
+                    "ignoreEmptyResult": {
+                        "value": true
+                    },
+                    "limitOffset": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "limitRows": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "matchDataTypes": {
+                        "value": false
+                    },
+                    "maxRetryProp": {
+                        "expression": false,
+                        "value": 0
+                    },
+                    "orderBy": {
+                        "value": []
+                    },
+                    "outputFields": {
+                        "value": []
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "queryHints": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "retryIntervalProp": {
+                        "expression": false,
+                        "value": 1
+                    },
+                    "rowversion": {
+                        "value": false
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "\"dbo\""
+                    },
+                    "stagingMode": {
+                        "value": "In memory"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "\"dbo\".\"Bizagi_DC_Search\""
+                    },
+                    "unique_identifier_column_option": {
+                        "value": "Convert to lower case (default)"
+                    },
+                    "whereClause": {
+                        "expression": false,
+                        "value": null
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000001": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000001",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Map Cases "
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "omitExpressionIfMissing": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$actionHR"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$actionHR"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$adminComments"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$adminComments"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$AlternateCellPhone"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$AlternateCellPhone"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$AlternateEmail"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$AlternateEmail"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$caseDate"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$caseDate"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$caseId"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$caseId"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$caseNumber"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$caseNumber"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$caseTriggerType"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$caseTriggerType"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$caseUID"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$caseUID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$CellPhone"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$CellPhone"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$ClaimFormSubmitted"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$ClaimFormSubmitted"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$ClientId"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$ClientId"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$CounsellingCaseNumber"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$CounsellingCaseNumber"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$dateOfLastContribution"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$dateOfLastContribution"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$dateofWithdrawal"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$dateofWithdrawal"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$email"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$email"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$employer"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$employer"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$enableAction"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$enableAction"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$envelopeId"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$envelopeId"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$fundCredit"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$fundCredit"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$fundName"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$fundName"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$HRAdminReviewed"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$HRAdminReviewed"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$HRSignerSigned"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$HRSignerSigned"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$idNumber"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$idNumber"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$lastModifiedDate"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$lastModifiedDate"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$memberId"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$memberId"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$memberName"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$memberName"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$memberNumber"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$memberNumber"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$milestone"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$milestone"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$phase1ID"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$phase1ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$phase2ID"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$phase2ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$roleName"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$roleName"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$status"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$status"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$statusReason"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$statusReason"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$task"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$task"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$type"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$type"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$withdrawalOptionValue"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$withdrawalOptionValue"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$xpiry55Date"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$xpiry55Date"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$ClientTier"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$ClientTier"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$COCaseCreationDate"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$COCaseCreationDate"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$DateClaimFormReceived"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$DateClaimFormReceived"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$DateClaimFormSent"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$DateClaimFormSent"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$DurationForClaimSubmission"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$DurationForClaimSubmission"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$HRReviewDate"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$HRReviewDate"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$LastActionDate"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$LastActionDate"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$LastActionTakenBy"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$LastActionTakenBy"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$HRSignDate"
+                                        },
+                                        "targetPath": {
+                                            "value": "HRSignDate"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$CompletedPackSentDate"
+                                        },
+                                        "targetPath": {
+                                            "value": "CompletedPackSentDate"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$HRReviewerNotes"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$HRReviewerNotes"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$HRSignerNotes"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$HRSignerNotes"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000002": {
+            "class_id": "com-snaplogic-snaps-sqlserver-select",
+            "class_version": 3,
+            "instance_id": "11111111-1111-1111-1111-000000000002",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": true,
+                        "value": "_Account"
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Select Milestone"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input101": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "outputRows": {
+                        "label": {
+                            "value": "rows"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "autoCommit": {
+                        "value": "False"
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "fetchOutputFieldsInSchema": {
+                        "value": false
+                    },
+                    "ignoreEmptyResult": {
+                        "value": true
+                    },
+                    "limitOffset": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "limitRows": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "matchDataTypes": {
+                        "value": false
+                    },
+                    "maxRetryProp": {
+                        "expression": false,
+                        "value": 0
+                    },
+                    "orderBy": {
+                        "value": []
+                    },
+                    "outputFields": {
+                        "value": []
+                    },
+                    "passThrough": {
+                        "value": true
+                    },
+                    "queryHints": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "retryIntervalProp": {
+                        "expression": false,
+                        "value": 1
+                    },
+                    "rowversion": {
+                        "value": false
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "\"dbo\""
+                    },
+                    "stagingMode": {
+                        "value": "In memory"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "\"dbo\".\"Bizagi_LKP_Milestone\""
+                    },
+                    "unique_identifier_column_option": {
+                        "value": "Convert to lower case (default)"
+                    },
+                    "whereClause": {
+                        "expression": true,
+                        "value": "\"MilestoneID = '\"+$milestone+\"'\""
+                    }
+                },
+                "view_serial": 101
+            }
+        },
+        "11111111-1111-1111-1111-000000000003": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000003",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Map Cases "
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "omitExpressionIfMissing": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.actionHR"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$actionHR"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.adminComments"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$adminComments"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.AlternateCellPhone"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$AlternateCellPhone"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.AlternateEmail"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$AlternateEmail"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.caseDate"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$caseDate"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.caseId"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$caseId"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.caseNumber"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$caseNumber"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.caseTriggerType"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$caseTriggerType"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.caseUID"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$caseUID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.CellPhone"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$CellPhone"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.ClaimFormSubmitted"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$ClaimFormSubmitted"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.ClientId"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$ClientId"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.CounsellingCaseNumber"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$CounsellingCaseNumber"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.dateOfLastContribution"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$dateOfLastContribution"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.dateofWithdrawal"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$dateofWithdrawal"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.email"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$email"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.employer"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$employer"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.enableAction"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$enableAction"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.envelopeId"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$envelopeId"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.fundCredit"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$fundCredit"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.fundName"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$fundName"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.HRAdminReviewed"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$HRAdminReviewed"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.HRSignerSigned"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$HRSignerSigned"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.idNumber"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$idNumber"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.lastModifiedDate"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$lastModifiedDate"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.memberId"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$memberId"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.memberName"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$memberName"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.memberNumber"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$memberNumber"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$MilestoneName.concat(\" - \",$RoleName)"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$milestone"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.phase1ID"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$phase1ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.phase2ID"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$phase2ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.roleName"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$roleName"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.status"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$status"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.statusReason"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$statusReason"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.type"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$type"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.withdrawalOptionValue"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$withdrawalOptionValue"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.xpiry55Date"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$xpiry55Date"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.ClientTier"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$ClientTier"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.COCaseCreationDate"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$COCaseCreationDate"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.DateClaimFormReceived"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$DateClaimFormReceived"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.DateClaimFormSent"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$DateClaimFormSent"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.DurationForClaimSubmission"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$DurationForClaimSubmission"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.HRReviewDate"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$HRReviewDate"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.LastActionDate"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$LastActionDate"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.LastActionTakenBy"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$LastActionTakenBy"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.HRSignDate"
+                                        },
+                                        "targetPath": {
+                                            "value": "HRSignDate"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.CompletedPackSentDate"
+                                        },
+                                        "targetPath": {
+                                            "value": "CompletedPackSentDate"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.HRReviewerNotes"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "HRReviewerNotes"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.HRSignerNotes"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "HRSignerNotes"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000004": {
+            "class_id": "com-snaplogic-snaps-sqlserver-execute",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000004",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": true,
+                        "value": "_Account"
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "ignore"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Check User"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input104": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output102": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "autoCommit": {
+                        "value": "Use account setting"
+                    },
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "ignoreEmptyResult": {
+                        "value": true
+                    },
+                    "maxRetryProp": {
+                        "expression": false,
+                        "value": 0
+                    },
+                    "passThrough": {
+                        "value": true
+                    },
+                    "queryType": {
+                        "expression": false,
+                        "value": "Auto"
+                    },
+                    "retryIntervalProp": {
+                        "expression": false,
+                        "value": 1
+                    },
+                    "sqlStatement": {
+                        "expression": true,
+                        "value": "\"SELECT fkiClientID\nFROM dbo.tempEverestHR\nWHERE pkiPersonID = '\" + _PersonId + \"'\nAND fkiClientID = '\" + $ClientId + \"'\nAND (\n       (intUserLevel = '5'\n        AND txtUsername LIKE '%AuthSig%')\n    OR\n       (intUserLevel = '1'\n        AND txtFirstName LIKE '%GTC Administrator%')\n)\""
+                    }
+                },
+                "view_serial": 104
+            }
+        },
+        "11111111-1111-1111-1111-000000000005": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000005",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Map Checked User"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "omitExpressionIfMissing": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.caseNumber"
+                                        },
+                                        "targetPath": {
+                                            "value": "['Case Number - Digital Claims']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.CounsellingCaseNumber"
+                                        },
+                                        "targetPath": {
+                                            "value": "['Case Number - Customer Onboarding (Counselling)']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.memberName"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "['Member name']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.roleName"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "['Assigned to']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.idNumber"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "['ID number']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.type"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "['Exit type']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "!isNaN(Date.parse($original.dateofWithdrawal)) && Date.parse($original.dateofWithdrawal) != null ? Date.parse($original.dateofWithdrawal).toLocaleDateString():null\n"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "['Exit date']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "\n\n!isNaN(Date.parse($original.dateOfLastContribution)) && Date.parse($original.dateOfLastContribution) != null ? Date.parse($original.dateOfLastContribution).toLocaleDateString():null\n"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "['Date of last contribution']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.withdrawalOptionValue"
+                                        },
+                                        "targetPath": {
+                                            "value": "['Withdrawal option']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "!isNaN(Date.parse($original.caseDate)) && Date.parse($original.caseDate) != null  ? Date.parse($original.caseDate).toLocaleDateString():null"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "['Start date - Digital Claims']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "!isNaN(Date.parse($original.COCaseCreationDate))  && Date.parse($original.COCaseCreationDate) != null? Date.parse($original.COCaseCreationDate).toLocaleDateString():null"
+                                        },
+                                        "targetPath": {
+                                            "value": "['Start date - Customer Onboarding (Counselling)']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.milestone"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "['Milestone']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.statusReason"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "['Status reason']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "!isNaN(Date.parse($original.xpiry55Date))  && Date.parse($original.xpiry55Date) != null? Date.parse($original.xpiry55Date).toLocaleDateString():null"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "['55 day expiry date']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "\nMath.floor(\n    (Date.now().getTime() - Date.parse($original.caseDate).getTime())\n    / 86400000\n)"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "['Days elapsed']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "!isNaN(Date.parse($original.DateClaimFormSent))  && Date.parse($original.DateClaimFormSent) != null? Date.parse($original.DateClaimFormSent).toLocaleDateString():null"
+                                        },
+                                        "targetPath": {
+                                            "value": "['Date Claim Form Sent to Member']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.ClaimFormSubmitted"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "['Claim form received from member Y/N']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "!isNaN(Date.parse($original.DateClaimFormReceived))  && Date.parse($original.DateClaimFormReceived) != null? Date.parse($original.DateClaimFormReceived).toLocaleDateString():null"
+                                        },
+                                        "targetPath": {
+                                            "value": "['Date Claim Form Received from Member']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.DurationForClaimSubmission"
+                                        },
+                                        "targetPath": {
+                                            "value": "['Days From Claim Form Sent To Received from Member']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "!isNaN(Date.parse($original.HRReviewDate))  && Date.parse($original.HRReviewDate) != null? Date.parse($original.HRReviewDate).toLocaleDateString():null"
+                                        },
+                                        "targetPath": {
+                                            "value": "['HR  Administrator Review Date']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.HRAdminReviewed"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "['HR Administrator reviewed claim form Y/N']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.HRReviewerNotes"
+                                        },
+                                        "targetPath": {
+                                            "value": "[' HR Administrator notes']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "!isNaN(Date.parse($original.HRSignDate))  && Date.parse($original.HRSignDate) != null? Date.parse($original.HRSignDate).toLocaleDateString():null"
+                                        },
+                                        "targetPath": {
+                                            "value": "['HR Sign Date']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.HRSignerSigned"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "['HR Manager signed claim form Y/N']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.HRSignerNotes"
+                                        },
+                                        "targetPath": {
+                                            "value": "['HR Signer notes']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "!isNaN(Date.parse($original.CompletedPackSentDate))  && Date.parse($original.CompletedPackSentDate) != null? Date.parse($original.CompletedPackSentDate).toLocaleDateString():null"
+                                        },
+                                        "targetPath": {
+                                            "value": "['Claim form sent to Member and GTC Date']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.status != \"In Progress\" ? \"Completed\":\"Active\" "
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "['Current Status']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.CellPhone"
+                                        },
+                                        "targetPath": {
+                                            "value": "['Cell no.']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.email"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "['Email address']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.AlternateCellPhone"
+                                        },
+                                        "targetPath": {
+                                            "value": "['Alternate cell no.']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.AlternateEmail"
+                                        },
+                                        "targetPath": {
+                                            "value": "['Alternate email address']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.adminComments"
+                                        },
+                                        "targetPath": {
+                                            "value": "['GTC Administrator notes']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.ClientTier"
+                                        },
+                                        "targetPath": {
+                                            "value": "['Client Tier']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.memberId"
+                                        },
+                                        "targetPath": {
+                                            "value": "['Member ID']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$original.memberNumber"
+                                        },
+                                        "targetPath": {
+                                            "value": "['Member Number']"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "!isNaN(Date.parse($original.LastActionDate)) && Date.parse($original.LastActionDate) != null ? (Math.floor((Date.now() - Date.parse($original.LastActionDate))/(1000 * 60 * 60 * 24))):null"
+                                        },
+                                        "targetPath": {
+                                            "value": "['Case History Action Date to This Date']"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000006": {
+            "class_id": "com-snaplogic-snaps-transform-unique",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000006",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Unique"
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Disabled"
+                    },
+                    "minimumFreeDiskSpace": {
+                        "value": 500
+                    },
+                    "minimumMemory": {
+                        "value": 500
+                    },
+                    "outOfResourceTimeout": {
+                        "value": 30
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000007": {
+            "class_id": "com-snaplogic-snaps-transform-excelformatter",
+            "class_version": 3,
+            "instance_id": "11111111-1111-1111-1111-000000000007",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Excel Formatter"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {
+                    "convertFormulas": {
+                        "value": false
+                    },
+                    "convertNumericString": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "ignoreEmptyStream": {
+                        "value": false
+                    },
+                    "includeAllColumns": {
+                        "value": false
+                    },
+                    "sheetNameProp": {
+                        "expression": false,
+                        "value": "DC-Cases"
+                    },
+                    "stringStorageFormat": {
+                        "value": "Inline strings"
+                    },
+                    "translateDateTimeTypes": {
+                        "value": false
+                    },
+                    "writeHeaderProp": {
+                        "value": true
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000008": {
+            "class_id": "com-snaplogic-snaps-binary-write",
+            "class_version": 3,
+            "instance_id": "11111111-1111-1111-1111-000000000008",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {}
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Input File Writer"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "output": {
+                    "output103": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "UserPermissionsKey": {
+                        "value": []
+                    },
+                    "advancedProperties": {
+                        "value": []
+                    },
+                    "cannedAcls": {
+                        "value": "None"
+                    },
+                    "createDir": {
+                        "value": true
+                    },
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "fileAction": {
+                        "value": "OVERWRITE"
+                    },
+                    "filename": {
+                        "expression": true,
+                        "value": "Date.now().withDayOfMonth(1).plusDays(-1).toLocaleDateString()+ \"-DigitalClaims.xlsx\""
+                    },
+                    "flushIntervalKb": {
+                        "value": -1
+                    },
+                    "preventURLEncoding": {
+                        "value": false
+                    },
+                    "retries": {
+                        "expression": false,
+                        "value": 0
+                    },
+                    "retryInterval": {
+                        "expression": false,
+                        "value": 1
+                    },
+                    "validate": {
+                        "value": false
+                    },
+                    "writeEmptyFile": {
+                        "value": false
+                    },
+                    "writeHeader": {
+                        "value": false
+                    }
+                },
+                "view_serial": 103
+            }
+        },
+        "11111111-1111-1111-1111-000000000009": {
+            "class_id": "com-snaplogic-snaps-binary-simpleread",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000009",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {}
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "File Reader"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input101": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {
+                    "advancedProperties": {
+                        "value": []
+                    },
+                    "enableStaging": {
+                        "value": false
+                    },
+                    "executeDuringPreview": {
+                        "value": true
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "filePath": {
+                        "expression": true,
+                        "value": "Date.now().withDayOfMonth(1).plusDays(-1).toLocaleDateString()+ \"-DigitalClaims.xlsx\""
+                    },
+                    "outputHeaders": {
+                        "value": [
+                            {
+                                "key": {
+                                    "value": "content-type"
+                                },
+                                "value": {
+                                    "expression": false,
+                                    "value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                                }
+                            },
+                            {
+                                "key": {
+                                    "value": "content-disposition"
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "'attachment; filename=\"'+Date.now().toLocaleDateString()+'-DigitalClaims.xlsx\"'"
+                                }
+                            }
+                        ]
+                    },
+                    "preventURLEncoding": {
+                        "value": false
+                    },
+                    "retries": {
+                        "expression": false,
+                        "value": 0
+                    },
+                    "retryInterval": {
+                        "expression": false,
+                        "value": 1
+                    }
+                },
+                "view_serial": 101
+            }
+        }
+    }
+}

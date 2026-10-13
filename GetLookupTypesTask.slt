@@ -1,0 +1,16 @@
+{
+    "job_class": "PipelineJob",
+    "job_name": "GetLookupTypesTask",
+    "note": "",
+    "parameters": {
+        "enabled": true,
+        "include_external_urls": true,
+        "job_type": "standard",
+        "pipeline_parameters": {},
+        "pipeline_path": "GetLookupTypes_001",
+        "snaplex_path": "teraco-snaplex-dev01"
+    },
+    "schedule": {},
+    "trigger": {},
+    "trigger_type": "ScheduleTrigger"
+}
